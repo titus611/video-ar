@@ -23,11 +23,9 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.4/dist/aframe-extras.min.js"></script>
 
-  <!-- 
-   pruebas directas con youtube
+  <!-- pruebas directas con youtube -->
    <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
-    -->
   
   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
   <script>
@@ -64,7 +62,10 @@ if(this.el.object3D.visible == true){
   </div>
   <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180' >
     <a-assets>
-      <video id="vid" src="https://www.youtube.com/watch?v=R7Ctne2FeR8" loop="true" crossorigin>
+      <!-- changing video parameters -->
+      <!-- video id="vid" src="https://www.youtube.com/watch?v=R7Ctne2FeR8" loop="true" crossorigin -->
+      
+  <video="R7Ctne2FeR8" data-autoplay="0" data-loop="1" id="youtube-audio">
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
